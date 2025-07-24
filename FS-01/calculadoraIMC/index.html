@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-black flex">
+        <article class="w-[50%] h-full flex items-center justify-center">
+            <img width="500px" src="./images/gym-animate.svg" alt="imagem-animada">
+        </article>
+        <article class="w-[50%] h-full flex items-center justify-center">
+            <div class="w-[400px] h-auto p-[15px] rounded-xl bg-[#262626]">
+                <div class="w-full flex flex-col">
+                    <h1 class="text-white text-3xl font-bold">Calculadora - IMC</h1>
+                    <div class="w-[120px] h-[2px] bg-[#17A34A] rounded-xl"></div>
+                </div>
+                <div class="w-full flex flex-col">
+                    <div class="w-full flex flex-col text-white py-[10px]">
+                        <label for="peso">Peso em Kg</label>
+                        <div class="w-full h-[50px] bg-[#3F3F47] flex">
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <i class="fa-solid fa-weight-hanging text-white"></i>
+                            </div>
+                            <input 
+                                type="number" 
+                                id="peso"
+                                class="w-[80%] h-full bg-transparent outline-none border-none text-white"
+                            >
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <p>Kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col text-white py-[10px]">
+                        <label for="altura">Altura em metros</label>
+                        <div class="w-full h-[50px] bg-[#3F3F47] flex">
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <i class="fa-solid fa-ruler"></i>
+                            </div>
+                            <input 
+                                type="number" 
+                                id="altura"
+                                class="w-[80%] h-full bg-transparent outline-none border-none text-white"
+                            >
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <p>m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 w-full flex items-center justify-center">
+                            <button class="w-full h-[50px] text-[18px] font-bold text-white hover:bg-transparent hover:text-[#00FF88] transition-all
+                                durantion-300 ease-in-out cursor-pointer bg-[#00FF88] border border-[#00FF88] rounded-md">
+                                Calcular
+                            </button>
+                    </div>
+                    <div class="w-full flex flex-col py-[10px] text-white" id="resultado">
+                        <div class="w-full h-[1px] bg-[#3F3F47]"></div>
+                        <div class="w-full flex py-[10px]">
+                            <div class="w-[40%] flex flex-col items-center justify-center">
+                                <h1 class="text-3xl font-bold text-[#00FF88]" id="imc">22.1</h1>
+                                <p class="text-sm">seu IMC</p>
+                            </div>
+                            <div class="w-[60%] flex items-center">
+                                <p id="descricao">Você está no peso ideal</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-[1px] bg-[#3F3F47]"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
