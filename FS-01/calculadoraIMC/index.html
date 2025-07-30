@@ -52,20 +52,22 @@
                         </div>
                     </div>
                     <div class="mt-4 w-full flex items-center justify-center">
-                            <button class="w-full h-[50px] text-[18px] font-bold text-white hover:bg-transparent hover:text-[#00FF88] transition-all
-                                durantion-300 ease-in-out cursor-pointer bg-[#00FF88] border border-[#00FF88] rounded-md">
+                            <button class="w-full h-[50px] text-[18px] font-bold text-white hover:bg-transparent 
+                                hover:text-[#00FF88] transition-all
+                                durantion-300 ease-in-out cursor-pointer bg-[#00FF88] border 
+                                border-[#00FF88] rounded-md" id="botao">
                                 Calcular
                             </button>
                     </div>
-                    <div class="w-full flex flex-col py-[10px] text-white" id="resultado">
+                    <div class="w-full flex flex-col py-[10px] text-white hidden" id="resultado">
                         <div class="w-full h-[1px] bg-[#3F3F47]"></div>
                         <div class="w-full flex py-[10px]">
                             <div class="w-[40%] flex flex-col items-center justify-center">
-                                <h1 class="text-3xl font-bold text-[#00FF88]" id="imc">22.1</h1>
+                                <h1 class="text-3xl font-bold text-[#00FF88]" id="imc"></h1>
                                 <p class="text-sm">seu IMC</p>
                             </div>
                             <div class="w-[60%] flex items-center">
-                                <p id="descricao">Você está no peso ideal</p>
+                                <p id="descricao"></p>
                             </div>
                         </div>
                         <div class="w-full h-[1px] bg-[#3F3F47]"></div>
@@ -74,5 +76,6 @@
             </div>
         </article>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
